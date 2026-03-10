@@ -56,8 +56,8 @@ class FruitModel {
         const deletedFruit = fruitsArray.find(fruit => fruit.name.toLowerCase() === this.name.toLowerCase());
       
         if (deletedFruit) {
-          const index = fruits.indexOf(deletedFruit);
-          fruits.splice(index, 1);
+          const index = fruitsArray.indexOf(deletedFruit);
+          fruitsArray.splice(index, 1);
         } else {
           throw "Quote not found";
         }

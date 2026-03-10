@@ -55,12 +55,12 @@ const destroy = async (req, res) => {
     const name = req.params.name.toLowerCase();
 
     try {
-      const fruit = await Fruit.show(name);
+      const fruit = await FruitsModel.showFruit(name);
       const result = await fruit.destroy();
 
       res.sendStatus(204)
     } catch (err) {
-      res.status(404).send({ error: err});
+      res.status(404).send({ error: err.message});
     }
 };
 
