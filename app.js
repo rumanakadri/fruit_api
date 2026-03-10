@@ -1,7 +1,7 @@
 //express framework
 //Maps to the specific Routes based on the url or parameters
 const express = require ('express')
-const cors = required('cors')
+const cors = require('cors')
 const fruitsApp = express()
 const fruitRoutes = require('./routes/fruitRoutes')
 
